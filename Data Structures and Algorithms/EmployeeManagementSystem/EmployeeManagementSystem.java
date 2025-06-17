@@ -8,14 +8,12 @@ public class EmployeeManagementSystem {
         size = 0;
     }
 
-    // Add an employee
     public boolean addEmployee(Employee emp) {
         if (size >= CAPACITY) return false;
         employees[size++] = emp;
         return true;
     }
 
-    // Search employee by ID
     public Employee searchEmployee(int employeeId) {
         for (int i = 0; i < size; i++) {
             if (employees[i].getEmployeeId() == employeeId) {
@@ -25,18 +23,15 @@ public class EmployeeManagementSystem {
         return null;
     }
 
-    // Traverse all employees
     public void traverseEmployees() {
         for (int i = 0; i < size; i++) {
             System.out.println(employees[i]);
         }
     }
 
-    // Delete employee by ID
     public boolean deleteEmployee(int employeeId) {
         for (int i = 0; i < size; i++) {
             if (employees[i].getEmployeeId() == employeeId) {
-                // Shift elements left
                 for (int j = i; j < size - 1; j++) {
                     employees[j] = employees[j + 1];
                 }
@@ -47,7 +42,6 @@ public class EmployeeManagementSystem {
         return false;
     }
 
-    // Print analysis
     public void printAnalysis() {
         System.out.println("Analysis of Array Operations:");
         System.out.println("1. Add: O(1) (if space available)\n2. Search: O(n)\n3. Traverse: O(n)\n4. Delete: O(n) (due to shifting)");
