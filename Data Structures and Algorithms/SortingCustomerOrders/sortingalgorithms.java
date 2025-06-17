@@ -1,9 +1,3 @@
-// Sorting Algorithms Explained:
-// Bubble Sort: Repeatedly compares and swaps adjacent elements if they are in the wrong order. O(n^2) time complexity.
-// Insertion Sort: Builds the sorted array one item at a time by inserting elements into their correct position. O(n^2) time complexity.
-// Quick Sort: Selects a pivot, partitions the array, and recursively sorts the subarrays. Average O(n log n) time complexity.
-// Merge Sort: Divides the array, sorts each half, and merges them. O(n log n) time complexity, but uses extra space.
-
 class Order {
     int orderId;
     String customerName;
@@ -26,7 +20,6 @@ class Order {
 }
 
 public class sortingalgorithms {
-    // Bubble Sort implementation for Order array by totalPrice
     public static void bubbleSort(Order[] orders) {
         int n = orders.length;
         for (int i = 0; i < n - 1; i++) {
@@ -40,7 +33,6 @@ public class sortingalgorithms {
         }
     }
 
-    // Quick Sort implementation for Order array by totalPrice
     public static void quickSort(Order[] orders, int low, int high) {
         if (low < high) {
             int pi = partition(orders, low, high);
@@ -74,14 +66,12 @@ public class sortingalgorithms {
             new Order(4, "Diana", 200.0)
         };
 
-        // Bubble Sort
         bubbleSort(orders);
         System.out.println("Sorted by Bubble Sort:");
         for (Order o : orders) {
             System.out.println(o);
         }
 
-        // Reset orders for Quick Sort
         orders = new Order[]{
             new Order(1, "Alice", 250.0),
             new Order(2, "Bob", 150.0),
