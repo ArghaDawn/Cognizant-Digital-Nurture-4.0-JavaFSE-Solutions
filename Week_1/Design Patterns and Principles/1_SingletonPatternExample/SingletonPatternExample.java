@@ -24,6 +24,9 @@ public class SingletonPatternExample {
         logger1.log("This is the first log message.");
         logger2.log("This is the second log message.");
 
+        System.out.println("Hashcode of logger1: " + logger1.hashCode());
+        System.out.println("Hashcode of logger2: " + logger2.hashCode());
+
         if (logger1 == logger2) {
             System.out.println("Both logger1 and logger2 are the same instance.");
         } else {
