@@ -1,0 +1,11 @@
+# Git merge backup files
+*_BACKUP_*
+*_BASE_*
+*_LOCAL_*
+*_REMOTE_*
+
+# Other common files to ignore
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db

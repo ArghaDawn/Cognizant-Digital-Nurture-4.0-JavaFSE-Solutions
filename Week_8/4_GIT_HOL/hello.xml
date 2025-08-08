@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <message>Hello from merged branches</message>
+    <version>1.0</version>
+    <project>Git Hands-on Lab</project>
+    <author>Developer from GitWork</author>
+    <date>2025-08-08</date>
+    <branch>Merged main and GitWork</branch>
+</root>
